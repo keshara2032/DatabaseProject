@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="645.0" prefWidth="965.0" style="-fx-background-color: #2A363F;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Signup.SignupController">
+   <children>
+      <AnchorPane layoutX="33.0" layoutY="28.0" prefHeight="590.0" prefWidth="895.0" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="28.0">
+         <children>
+            <Text fill="#d3d3d3" layoutX="391.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
+               <font>
+                  <Font name="Raleway Medium" size="31.0" />
+               </font>
+            </Text>
+            <TextField layoutX="150.0" layoutY="138.0" prefHeight="50.0" prefWidth="291.0" promptText="First Name" style="-fx-background-color: #31a0a0; -fx-border-color: #238787;" stylesheets="@../Login.css">
+               <font>
+                  <Font name="Raleway ExtraBold" size="19.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="456.0" layoutY="138.0" prefHeight="50.0" prefWidth="291.0" promptText="Last Name" style="-fx-background-color: #31a0a0; -fx-border-color: #238787;" stylesheets="@../Login.css" />
+            <TextField layoutX="148.0" layoutY="208.0" prefHeight="50.0" prefWidth="599.0" promptText="Street Address" style="-fx-background-color: #31a0a0; -fx-border-color: #238787;" stylesheets="@../Login.css">
+               <font>
+                  <Font name="Raleway ExtraBold" size="19.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="148.0" layoutY="279.0" prefHeight="50.0" prefWidth="599.0" promptText="City" style="-fx-background-color: #31a0a0; -fx-border-color: #238787;" stylesheets="@../Login.css">
+               <font>
+                  <Font name="Raleway ExtraBold" size="19.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="148.0" layoutY="350.0" prefHeight="50.0" prefWidth="599.0" promptText="District" style="-fx-background-color: #31a0a0; -fx-border-color: #238787;" stylesheets="@../Login.css">
+               <font>
+                  <Font name="Raleway ExtraBold" size="19.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="148.0" layoutY="422.0" prefHeight="50.0" prefWidth="291.0" promptText="Mobile" style="-fx-background-color: #31a0a0; -fx-border-color: #238787;" stylesheets="@../Login.css">
+               <font>
+                  <Font name="Raleway ExtraBold" size="19.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="456.0" layoutY="422.0" prefHeight="50.0" prefWidth="291.0" promptText="Home" style="-fx-background-color: #31a0a0; -fx-border-color: #238787;" stylesheets="@../Login.css">
+               <font>
+                  <Font name="Raleway ExtraBold" size="19.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="createProfileButton" layoutX="376.0" layoutY="494.0" onAction="#createProfile" style="-fx-border-color: #31a0a0; -fx-background-color: #31a0a0;" stylesheets="@../Login.css" text="Create Profile" textFill="#e4e4e4">
+               <font>
+                  <Font name="Raleway SemiBold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Text fill="#00ff11" layoutX="332.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Created Succesfully" textAlignment="CENTER" wrappingWidth="231.13671875">
+               <font>
+                  <Font name="Raleway ExtraBold" size="16.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="homeButton" layoutX="281.0" layoutY="494.0" onAction="#backToHome" style="-fx-border-color: #31a0a0;" stylesheets="@../Login.css" text="Home" textFill="#e4e4e4">
+               <font>
+                  <Font name="Raleway SemiBold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="exitButton" layoutX="536.0" layoutY="494.0" onAction="#exitAction" prefHeight="35.0" prefWidth="78.0" style="-fx-border-color: #31a0a0;" stylesheets="@../Login.css" text="Exit" textFill="#e4e4e4">
+               <font>
+                  <Font name="Raleway SemiBold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

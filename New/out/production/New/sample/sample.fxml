@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane fx:id="loginAnchorPane" prefHeight="645.0" prefWidth="965.0" style="-fx-background-color: #2A363F;">
+         <children>
+            <Pane layoutX="61.0" layoutY="146.0" prefHeight="300.0" prefWidth="348.0" AnchorPane.bottomAnchor="199.0" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="556.0" AnchorPane.topAnchor="146.0">
+               <children>
+                  <ImageView fitHeight="277.0" fitWidth="299.0" layoutX="27.0" layoutY="12.0" opacity="0.61" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/2.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#3b9089" layoutX="54.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" textAlignment="CENTER" wrappingWidth="240.576171875">
+                     <font>
+                        <Font name="Raleway Medium" size="39.0" />
+                     </font>
+                  </Text>
+                  <Line endX="100.0" layoutX="174.0" layoutY="275.0" opacity="0.68" startX="-100.0" stroke="#6892bc" />
+               </children>
+            </Pane>
+            <Text fill="#51b0a3" layoutX="91.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIKS Software Solutions" textAlignment="CENTER" wrappingWidth="306.13671875">
+               <font>
+                  <Font name="Raleway SemiBold" size="12.0" />
+               </font>
+            </Text>
+            <Line endX="-100.0" endY="205.0" layoutX="582.0" layoutY="330.0" startX="-100.0" startY="-220.0" stroke="#3b9089" />
+            <TextField id="usernameText" fx:id="usernameText" layoutX="565.0" layoutY="206.0" prefHeight="46.0" prefWidth="314.0" promptText="Username" style="-fx-background-color: #2A363F; -fx-border-color: #3b9089;" stylesheets="@Login.css" />
+            <PasswordField id="passwordText" fx:id="passwordText" layoutX="565.0" layoutY="296.0" prefHeight="46.0" prefWidth="314.0" promptText="Password" style="-fx-border-color: #3b9089; -fx-background-color: #2A363F;" stylesheets="@Login.css" />
+            <JFXButton id="loginButton" fx:id="loginButton" layoutX="622.0" layoutY="400.0" onAction="#handleLogin" prefHeight="46.0" prefWidth="201.0" style="-fx-background-color: #3b9089;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Raleway Medium" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="forgotPasswordButton" layoutX="565.0" layoutY="482.0" opacity="0.5" style="-fx-border-color: #3b9089;" text="Forgot Password?" textFill="#a1a1a1" />
+            <JFXButton id="signupButton" layoutX="767.0" layoutY="482.0" opacity="0.51" prefHeight="27.0" prefWidth="112.0" style="-fx-border-color: #3b9089;" text="Sign Up" textFill="#a1a1a1" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
